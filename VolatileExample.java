@@ -21,7 +21,7 @@ class vole extends Thread{
 
 
 
-public class volatileKeyword {
+public class volatileExample {
     public static void main(String[] args) throws InterruptedException {
         vole vole1 = new vole();
         vole1.start();
