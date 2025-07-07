@@ -22,6 +22,8 @@ class myservlet extends HttpServlet {
 }
 
 
+//Servelt practice
+
 public class ServletJava {
 
 }
