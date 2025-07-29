@@ -1,5 +1,7 @@
+import java.util.List;
+
 public class RevreseInteger {
-    public int reverse(int x) {
+    public int reverse(List<String> x) {
         int rev = 0;
         while (x != 0) {
             int pop = x % 10;
