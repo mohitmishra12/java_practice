@@ -9,6 +9,8 @@ class SegmentTree {
         build(1, 1, n);
     }
 
+
+
     public void build(int u, int l, int r) {
         if (l == r) {
             tr[u] = nums[l - 1];
