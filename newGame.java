@@ -20,6 +20,4 @@ class newGame {
         }
         return dp.get(0);
     }
-
-
 }
