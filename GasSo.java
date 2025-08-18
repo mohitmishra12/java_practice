@@ -6,11 +6,8 @@ class GasSo {
         final int costSum = Arrays.stream(cost).sum();
         if (gasSum - costSum < 0)
             return -1;
-
         int ans = 0;
         int sum = 0;
-
-
         for (int i = 0; i < gas.length; ++i) {
             sum += gas[i] - cost[i];
             if (sum < 0) {
