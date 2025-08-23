@@ -10,6 +10,7 @@ class FruitBasket {
             if (cnt.size() > 2) {
                 int y = fruits[j++];
                 cnt.put(y, cnt.get(y) - 1);
+
                 if (cnt.get(y) == 0) {
                     cnt.remove(y);
                 }
