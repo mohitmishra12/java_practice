@@ -5,7 +5,9 @@ class MaxmunRectungler {
             int l = d[0], w = d[1];
             int t = l * l + w * w;
             if (mx < t) {
+
                 mx = t;
+
                 ans = l * w;
             } else if (mx == t) {
                 ans = Math.max(ans, l * w);
