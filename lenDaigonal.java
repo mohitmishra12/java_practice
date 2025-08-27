@@ -12,8 +12,10 @@ class lenDaigonal {
                 if (grid[i][j] != 1) {
                     continue;
                 }
+
                 int[] maxs = { m - i, j + 1, i + 1, n - j };
                 for (int k = 0; k < 4; k++) {
+
                     if (maxs[k] > ans) {
                         ans = Math.max(ans, dfs(i, j, k, 1, 2, grid, memo) + 1);
                     }
