@@ -5,6 +5,7 @@ class ThreeSameNumber {
             if (num.contains(ret)) {
                 return ret;
             }
+
         }
         return "";
     }
