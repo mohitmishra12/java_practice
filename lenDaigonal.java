@@ -12,7 +12,6 @@ class lenDaigonal {
                 if (grid[i][j] != 1) {
                     continue;
                 }
-
                 int[] maxs = { m - i, j + 1, i + 1, n - j };
                 for (int k = 0; k < 4; k++) {
 
@@ -24,7 +23,6 @@ class lenDaigonal {
         }
         return ans;
     }
-
     private int dfs(int i, int j, int k, int canTurn, int target, int[][] grid, int[][][] memo) {
         i += DIRS[k][0];
         j += DIRS[k][1];

@@ -18,5 +18,6 @@ class Wirte_angle {
             }
         }
         return ans;
+
     }
 }
