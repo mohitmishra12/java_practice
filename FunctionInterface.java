@@ -1,5 +1,5 @@
 
-@FunctionalInterface
+//@FunctionalInterfacee
 interface matchoperation{
     int operate ( int a , int b);
 
