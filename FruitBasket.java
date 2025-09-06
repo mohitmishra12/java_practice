@@ -15,6 +15,8 @@ class FruitBasket {
                     cnt.remove(y);
                 }
             }
+
+
         }
         return n - j;
     }
