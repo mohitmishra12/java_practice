@@ -5,7 +5,6 @@ interface matchoperation{
 
 }
 
-
 public class FunctionInterface {
     public static void main(String[] args) {
         matchoperation add = (a,b) -> a + b;
