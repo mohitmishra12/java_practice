@@ -4,6 +4,8 @@ class maxFeqSum {
         for (char c : s.toCharArray()) {
             ++cnt[c - 'a'];
         }
+
+
         int a = 0, b = 0;
         for (int i = 0; i < cnt.length; ++i) {
             char c = (char) (i + 'a');
@@ -13,6 +15,7 @@ class maxFeqSum {
                 b = Math.max(b, cnt[i]);
             }
         }
+
         return a + b;
     }
 }
