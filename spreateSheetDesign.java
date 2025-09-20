@@ -7,6 +7,7 @@ class spreateSheetDesign {
     public spreateSheetDesign(int rows) {
     }
 
+
     public void setCell(String cell, int value) {
         d.put(cell, value);
     }

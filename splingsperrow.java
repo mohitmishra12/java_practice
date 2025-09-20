@@ -27,6 +27,7 @@ class splingsperrow {
         for (int i = 0; i < queries.length; i++) {
             ans[i] = solve(queries[i]);
         }
+
         return ans;
     }
     public String solve(String query) {
