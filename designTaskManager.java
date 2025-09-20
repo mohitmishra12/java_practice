@@ -3,6 +3,8 @@
 //import java.util.Map;
 //import java.util.TreeSet;
 //
+
+
 //class designTaskManager {
 //    private final Map<Integer, int[]> d = new HashMap<>();
 //    private final TreeSet<int[]> st = new TreeSet<>((a, b) -> {
@@ -11,6 +13,8 @@
 //        }
 //        return b[0] - a[0];
 //    });
+
+
 //
 //    public void TaskManager(List<List<Integer>> tasks) {
 //        for (var task : tasks) {
