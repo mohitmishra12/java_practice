@@ -22,7 +22,6 @@ class splingsperrow {
             String wordlowDV = devowel(wordlow);
             words_vow.putIfAbsent(wordlowDV, word);
         }
-
         String[] ans = new String[queries.length];
 
         for (int i = 0; i < queries.length; i++) {
@@ -30,7 +29,6 @@ class splingsperrow {
         }
         return ans;
     }
-
     public String solve(String query) {
         if (words_perfect.contains(query))
             return query;
@@ -55,7 +53,6 @@ class splingsperrow {
         }
         return new String(chars);
     }
-
     public boolean isVowel(char c) {
         return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
     }
