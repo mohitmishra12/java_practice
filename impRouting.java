@@ -8,7 +8,7 @@ class impRouting {
     HashMap<Integer, List<int[]>>map;
     int size;
     public impRouting(int memoryLimit) {
-        que=new LinkedList<>();
+//        que=new LinkedList<>();
         map=new HashMap<>();
         this.size=memoryLimit;
     }
