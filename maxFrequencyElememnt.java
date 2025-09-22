@@ -5,6 +5,8 @@ class maxFrequencyElememnt {
             ++cnt[x];
         }
         int ans = 0, mx = -1;
+
+
         for (int x : cnt) {
             if (mx < x) {
                 mx = x;
