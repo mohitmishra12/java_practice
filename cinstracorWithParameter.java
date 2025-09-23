@@ -7,7 +7,7 @@ class mohit{
     }
 
 }
-class mohitm extends mohit{
+class mohitm extends mohit1 {
     mohitm(){
         super("mohit mishra");
         System.out.println("my secound constracor");

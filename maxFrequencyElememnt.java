@@ -11,7 +11,8 @@ class maxFrequencyElememnt {
             if (mx < x) {
                 mx = x;
                 ans = x;
-            } else if (mx == x) {
+            } else if (mx
+                    == x) {
                 ans += x;
             }
         }
