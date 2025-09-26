@@ -6,7 +6,7 @@ interface MyFunctionalInterface {
 public class FunctionalProgrammingJavaEightFeature {
     public static void main(String[] args) {
 
-        MyFunctionalInterface ft = name -> System.out.println("name -: " + name);
+        MyFunctionalInterfacee ft = name -> System.out.println("name -: " + name);
         ft.greet("mohit");
     }
 }
