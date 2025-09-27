@@ -14,7 +14,7 @@ public class FuncationalInterfaceNew {
 
         MyNewInteface greet = (name -> System.out.println("name:" + name));
         greet.hayMini("mohit");
-//        greet.toString().getBytes(StandardCharsets.UTF_8);
+        greet.toString().getBytes(StandardCharsets.UTF_8);
         greet.newoen();
     }
 }
