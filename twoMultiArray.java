@@ -11,7 +11,8 @@ public class twoMultiArray {
             for (int j = 0; j < 3; j++) {
                 System.out.print(arr[i][j]*20/2+2 + " ");
             }
-            System.out.println();
+
+            System.out.println("");
             
         }
     }
