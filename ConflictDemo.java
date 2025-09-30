@@ -1,2 +1,2 @@
-package PACKAGE_NAME;public class ConflictDemo {
-}
+//package PA/CKAGE_NAME;public class ConflictDemo {
+//}
