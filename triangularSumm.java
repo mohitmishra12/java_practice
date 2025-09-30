@@ -5,7 +5,10 @@ class triangularSumm {
             for (int j = 0; j < i - 1; ++j) {
                 nums[j] = (nums[j] + nums[j + 1]) % 10;
             }
+
         }
+
+
         return nums[0];
     }
 }
