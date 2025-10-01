@@ -7,6 +7,7 @@ public class streamapi {
         // Stream to filter even numbers and display
         numbers.stream()
                 .filter(n -> n % 3 == 0)
+                .limit(2)
                 .forEach(System.out::println);
     }
 }
