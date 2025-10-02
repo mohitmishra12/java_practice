@@ -18,9 +18,6 @@ class vole extends Thread{
     public void stopThread() {
     }
 }
-
-
-
 public class volatileExample {
     public static void main(String[] args) throws InterruptedException {
         vole vole1 = new vole();
@@ -29,6 +26,5 @@ public class volatileExample {
         Thread.sleep(1000);
 
         vole1.stopThread();
-
     }
 }
