@@ -6,8 +6,10 @@ public class streamapi {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);
         // Stream to filter even numbers and display
         numbers.stream()
+
                 .filter(n -> n % 3 == 0)
                 .limit(2)
+                .skip('3')
                 .forEach(System.out::println);
     }
 }
