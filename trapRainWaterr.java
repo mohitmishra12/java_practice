@@ -4,6 +4,7 @@ class trapRainWaterr {
         int n = heightMap[0].length;
         int[][] vols = new int[m][n];
         for (int i = 0; i < m; i++) {
+
             for (int j = 0; j < n; j++) {
                 vols[i][j] = heightMap[i][j];
 
