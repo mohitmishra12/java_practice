@@ -13,6 +13,7 @@ class swaimInraising {
                 hi[grid[i][j]] = i * n + j;
             }
         }
+
         int[] dirs = {-1, 0, 1, 0, -1};
         for (int t = 0; t < n * n; ++t) {
             int i = hi[t] / n;
@@ -28,6 +29,7 @@ class swaimInraising {
                 }
             }
         }
+
         return -1;
     }
 
