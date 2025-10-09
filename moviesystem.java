@@ -6,6 +6,7 @@ class moviesystem {
         final int movie;
         final int price;
         Node(int shop, int movie, int price) {
+
             this.shop = shop;
             this.movie = movie;
             this.price = price;
@@ -57,6 +58,7 @@ class moviesystem {
     }
 
 
+
     public void rent(int shop, int movie) {
         long k = key(shop, movie);
         Node node = byPair.get(k);
@@ -76,6 +78,7 @@ class moviesystem {
                 .computeIfAbsent(movie, x -> new TreeSet<>(CMP))
                 .add(node);
     }
+
 
 
     public List<List<Integer>> report() {
