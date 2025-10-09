@@ -15,6 +15,7 @@ class moviesystem {
 
 
     private static final Comparator<Node> CMP =
+
             (a, b) -> {
                 int c = Integer.compare(a.price, b.price);
                 if (c != 0) return c;
@@ -38,6 +39,7 @@ class moviesystem {
         for (int[] e : entries) {
             int shop = e[0], movie = e[1], price = e[2];
             Node node = new Node(shop, movie, price);
+
             byPair.put(key(shop, movie), node);
             availableByMovie
                     .computeIfAbsent(movie, k -> new TreeSet<>(CMP))
@@ -86,6 +88,7 @@ class moviesystem {
         Iterator<Node> it = rentedSet.iterator();
         for (int i = 0; i < 5 && it.hasNext(); i++) {
             Node n = it.next();
+
             ans.add(Arrays.asList(n.shop, n.movie));
         }
         return ans;
