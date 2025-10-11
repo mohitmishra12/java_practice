@@ -16,13 +16,16 @@ class maxmumStranth {
         f = new Long[n];
         cnt = new HashMap<>(n);
         nxt = new int[n];
+
         for (int i = 0; i < n; ++i) {
             cnt.merge(power[i], 1, Integer::sum);
+
             int l = Arrays.binarySearch(power, power[i] + 3);
             l = l < 0 ? -l - 1 : l;
             nxt[i] = l;
         }
         return dfs(0);
+
     }
 
     private long dfs(int i) {
