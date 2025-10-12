@@ -42,6 +42,7 @@ class moviesystem {
 
             byPair.put(key(shop, movie), node);
             availableByMovie
+
                     .computeIfAbsent(movie, k -> new TreeSet<>(CMP))
                     .add(node);
         }
@@ -52,6 +53,7 @@ class moviesystem {
         List<Integer> ans = new ArrayList<>(5);
         TreeSet<Node> set = availableByMovie.get(movie);
         if (set == null || set.isEmpty()) return ans;
+
         Iterator<Node> it = set.iterator();
         for (int i = 0; i < 5 && it.hasNext(); i++) {
             ans.add(it.next().shop);
