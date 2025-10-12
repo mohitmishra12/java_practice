@@ -23,7 +23,9 @@ class maxmumStranth {
             int l = Arrays.binarySearch(power, power[i] + 3);
             l = l < 0 ? -l - 1 : l;
             nxt[i] = l;
+
         }
+
         return dfs(0);
 
     }
