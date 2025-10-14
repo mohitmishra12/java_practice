@@ -11,7 +11,7 @@ public class lambdaPracticess {
         newList.add(78);
         newList.add(74);
 
-        newList.remove(1).equals(12);
+//        newList.remove(1).equals(12);
         newList.forEach(n-> System.out.println(n));
     }
 }
