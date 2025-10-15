@@ -11,7 +11,6 @@ class maxIncreasingSub {
                 ans = Math.max(ans, Math.max(cur / 2, Math.min(pre, cur)));
                 pre = cur;
                 cur = 0;
-
             }
         }
         return ans;
