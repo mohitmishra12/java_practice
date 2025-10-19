@@ -16,7 +16,6 @@ class maxPartitions {
                 count++;
             }
 
-
             left1[i] = mask1;
             left2[i] = mask2;
             partitions[i] = count;

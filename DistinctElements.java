@@ -11,7 +11,6 @@ class DistinctElements {
                 ++ans;
                 pre = cur;
             }
-
         }
 
         return ans;
