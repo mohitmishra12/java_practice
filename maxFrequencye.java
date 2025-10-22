@@ -12,12 +12,12 @@ class maxFrequencye {
             d.merge(x - k, 1, Integer::sum);
             d.merge(x + k + 1, -1, Integer::sum);
         }
-        int ans = 0, s = 0;
-        for (var e : d.entrySet()) {
-            int x = e.getKey(), t = e.getValue();
-            s += t;
-            ans = Math.max(ans, Math.min(s, cnt.getOrDefault(x, 0) + numOperations));
-        }
-        return ans;
-    }
-}
+//        int ans = 0, s = 0;
+//        for (var e : d.entrySet()) {
+//            int x = e.getKey(), t = e.getValue();
+//            s += t;
+//            ans = Math.max(ans, Math.min(s, cnt.getOrDefault(x, 0) + numOperations));
+//        }
+//        return ans;
+//    }
+//}
