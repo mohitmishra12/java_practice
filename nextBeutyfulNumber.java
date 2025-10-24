@@ -13,15 +13,19 @@ class nextBeutyfulNumber {
 
     int[] counts = { 0, 1, 2, 3, 4, 5, 6 };
 
+
+
     public int dfs(int num, int n, int lim) {
         if (n == 0) {
             if (num <= lim)
                 return 0;
+
             for (int i = 1; i < counts.length; i++) {
                 if (counts[i] != 0 && counts[i] != i)
                     return 0;
             }
             return num;
+
         }
         for (int i = 1; i <= 6; i++) {
             if (counts[i] > 0) {
