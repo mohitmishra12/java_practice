@@ -8,11 +8,13 @@ class totalMon {
                 start++;
                 total += start;
                 curr = start;
+
             } else {
                 curr++;
                 total += curr;
             }
         }
+
         return total;
     }
 }
