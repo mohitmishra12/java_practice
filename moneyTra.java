@@ -16,18 +16,22 @@ class moneyTra {
         return true;
     }
 
+
     public boolean deposit(int account, long money) {
         if (account > n) {
             return false;
         }
+
         balance[account - 1] += money;
         return true;
     }
+
 
     public boolean withdraw(int account, long money) {
         if (account > n || balance[account - 1] < money) {
             return false;
         }
+
         balance[account - 1] -= money;
         return true;
     }
