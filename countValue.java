@@ -12,7 +12,9 @@ class countValue {
             } else if (Math.abs(l * 2 - s) <= 1) {
                 ++ans;
             }
+
         }
+
         return ans;
     }
 }
