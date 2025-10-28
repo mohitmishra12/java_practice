@@ -7,10 +7,13 @@ class countValue {
         for (int x : nums) {
             if (x != 0) {
                 l += x;
+
             } else if (l * 2 == s) {
                 ans += 2;
+
             } else if (Math.abs(l * 2 - s) <= 1) {
                 ++ans;
+
             }
 
         }
