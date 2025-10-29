@@ -9,13 +9,11 @@ class numberOfBeamss {
                     ++t;
                 }
             }
-
             if (t > 0) {
                 ans += last * t;
                 last = t;
             }
         }
-
         return ans;
 
     }
