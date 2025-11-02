@@ -7,6 +7,7 @@ class gridSystem {
         for (var e : walls) {
             g[e[0]][e[1]] = 2;
         }
+
         int[] dirs = {-1, 0, 1, 0, -1};
         for (var e : guards) {
             for (int k = 0; k < 4; ++k) {
@@ -19,6 +20,7 @@ class gridSystem {
                 }
             }
         }
+
         int ans = 0;
         for (var row : g) {
             for (int v : row) {
@@ -27,6 +29,7 @@ class gridSystem {
                 }
             }
         }
+
         return ans;
     }
 }
