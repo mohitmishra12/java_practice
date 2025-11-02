@@ -10,12 +10,14 @@ class gridSystem {
 
         int[] dirs = {-1, 0, 1, 0, -1};
         for (var e : guards) {
+
             for (int k = 0; k < 4; ++k) {
                 int x = e[0], y = e[1];
                 int a = dirs[k], b = dirs[k + 1];
                 while (x + a >= 0 && x + a < m && y + b >= 0 && y + b < n && g[x + a][y + b] < 2) {
                     x += a;
                     y += b;
+
                     g[x][y] = 1;
                 }
             }
