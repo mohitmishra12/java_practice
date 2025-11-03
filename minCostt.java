@@ -10,8 +10,10 @@ class minCostt {
                 maxNeededTime = Math.max(maxNeededTime, neededTime[i]);
             } else {
 
+
                 maxNeededTime = neededTime[i];
             }
+
 
         return ans;
     }
