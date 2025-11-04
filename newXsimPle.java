@@ -57,10 +57,12 @@ class newXsimPle {
             return;
         }
         var p = new int[] {cnt.get(v), v};
+
         if (!l.isEmpty() && l.comparator().compare(l.first(), p) < 0) {
             l.add(p);
             s += p[0] * p[1];
         } else {
+
             r.add(p);
         }
     }
