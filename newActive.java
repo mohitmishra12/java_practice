@@ -25,6 +25,7 @@ class newActive {
         }
         return ans;
     }
+
     private void add(int count, int num) {
         if(count == 0) return;
         int[] val = new int[] {count, num};
@@ -33,6 +34,7 @@ class newActive {
             sum += (long)count * num;
             return;
         }
+
         int[] temp = active.first();
         if(temp[0] > count || temp[0] == count && temp[1] >= num) {
             inactive.add(val);
