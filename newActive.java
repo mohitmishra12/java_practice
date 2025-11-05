@@ -52,6 +52,7 @@ class newActive {
             return;
         }
 
+
         active.remove(val);
         sum -= (long)count * num;
         if(inactive.isEmpty()) return;
@@ -60,4 +61,5 @@ class newActive {
         sum += (long)temp[0] * temp[1];
         active.add(temp);
     }
+
 }
