@@ -6,6 +6,7 @@ class NewWe {
         int[] parent = new int[c + 1];
         int[] rank = new int[c + 1];
 
+
         for (int i = 1; i <= c; i++) parent[i] = i;
 
         // Find
@@ -23,6 +24,7 @@ class NewWe {
         java.util.function.BiConsumer<Integer, Integer> union = (a, b) -> {
             int pa = find.applyAsInt(a);
             int pb = find.applyAsInt(b);
+
             if (pa != pb) {
                 if (rank[pa] < rank[pb]) parent[pa] = pb;
                 else if (rank[pb] < rank[pa]) parent[pb] = pa;
