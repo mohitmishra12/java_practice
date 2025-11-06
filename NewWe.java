@@ -27,6 +27,7 @@ class NewWe {
 
             if (pa != pb) {
                 if (rank[pa] < rank[pb]) parent[pa] = pb;
+
                 else if (rank[pb] < rank[pa]) parent[pb] = pa;
                 else { parent[pb] = pa; rank[pa]++; }
             }
@@ -35,7 +36,7 @@ class NewWe {
         // Build DSU
         for (int[] edge : connections) union.accept(edge[0], edge[1]);
 
-        // Maintain online stations in each component
+
         Map<Integer, TreeSet<Integer>> compOnline = new HashMap<>();
         for (int i = 1; i <= c; i++) {
             int root = find.applyAsInt(i);
