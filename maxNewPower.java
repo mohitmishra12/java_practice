@@ -27,6 +27,7 @@ class maxNewPower {
                 right = mid - 1;
             }
         }
+
         return left;
     }
 
@@ -38,6 +39,7 @@ class maxNewPower {
             long dist = x - (s[i] + t);
             if (dist > 0) {
                 if (k < dist) {
+
                     return false;
                 }
                 k -= dist;
