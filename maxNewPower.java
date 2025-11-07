@@ -9,9 +9,11 @@ class maxNewPower {
         n = stations.length;
         d = new long[n + 1];
         s = new long[n + 1];
+
         for (int i = 0; i < n; ++i) {
             int left = Math.max(0, i - r), right = Math.min(i + r, n - 1);
             d[left] += stations[i];
+
             d[right + 1] -= stations[i];
         }
         s[0] = d[0];
@@ -20,6 +22,7 @@ class maxNewPower {
         }
         long left = 0, right = 1l << 40;
         while (left < right) {
+
             long mid = (left + right + 1) >>> 1;
             if (check(mid, r, k)) {
                 left = mid;
@@ -48,6 +51,7 @@ class maxNewPower {
                 d[left] += dist;
                 d[right + 1] -= dist;
                 t += dist;
+
             }
         }
         return true;
