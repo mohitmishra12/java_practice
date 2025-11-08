@@ -33,7 +33,8 @@ class NewWe {
             }
         };
 
-        // Build DSU
+
+
         for (int[] edge : connections) union.accept(edge[0], edge[1]);
 
 
@@ -61,7 +62,7 @@ class NewWe {
                     else ans.add(set.first());
                 }
             } else {
-                // Offline operation
+
                 if (!offline[x]) {
                     offline[x] = true;
                     int root = find.applyAsInt(x);
