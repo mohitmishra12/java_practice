@@ -9,7 +9,7 @@ class NewWe {
 
         for (int i = 1; i <= c; i++) parent[i] = i;
 
-        // Find
+
         java.util.function.IntUnaryOperator find = new java.util.function.IntUnaryOperator() {
             public int applyAsInt(int x) {
                 while (x != parent[x]) {
@@ -71,7 +71,7 @@ class NewWe {
             }
         }
 
-        // Convert to array
+
         int[] res = new int[ans.size()];
         for (int i = 0; i < ans.size(); i++) res[i] = ans.get(i);
         return res;
