@@ -2,6 +2,8 @@ class newFun {
     public int findMaxForm(String[] strs, int m, int n) {
         int sz = strs.length;
         int[][][] f = new int[sz + 1][m + 1][n + 1];
+
+
         for (int i = 1; i <= sz; ++i) {
             int[] cnt = count(strs[i - 1]);
 
