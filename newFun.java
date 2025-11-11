@@ -4,6 +4,7 @@ class newFun {
         int[][][] f = new int[sz + 1][m + 1][n + 1];
         for (int i = 1; i <= sz; ++i) {
             int[] cnt = count(strs[i - 1]);
+
             for (int j = 0; j <= m; ++j) {
                 for (int k = 0; k <= n; ++k) {
                     f[i][j][k] = f[i - 1][j][k];
