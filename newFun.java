@@ -16,12 +16,15 @@ class newFun {
         return f[sz][m][n];
     }
 
+
     private int[] count(String s) {
         int[] cnt = new int[2];
 
         for (int i = 0; i < s.length(); ++i) {
             ++cnt[s.charAt(i) - '0'];
         }
+
+
 
         return cnt;
     }
