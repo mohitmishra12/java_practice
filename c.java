@@ -7,6 +7,7 @@ class c {
                 ++cnt;
             }
         }
+
         if (cnt > 0) {
             return n - cnt;
         }
@@ -22,7 +23,6 @@ class c {
         }
         return mi > n ? -1 : n - 1 + mi - 1;
     }
-
     private int gcd(int a, int b) {
         return b == 0 ? a : gcd(b, a % b);
     }
