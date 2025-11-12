@@ -27,8 +27,6 @@ class newFun {
             ++cnt[s.charAt(i) - '0'];
         }
 
-
-
         return cnt;
     }
 }
