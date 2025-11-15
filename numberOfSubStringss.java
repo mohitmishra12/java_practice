@@ -9,6 +9,7 @@ class numberOfSubStringss {
                 nxt[i] = i;
             }
         }
+
         int ans = 0;
         for (int i = 0; i < n; ++i) {
             int cnt0 = s.charAt(i) == '0' ? 1 : 0;
@@ -22,6 +23,7 @@ class numberOfSubStringss {
                 ++cnt0;
             }
         }
+
         return ans;
     }
 }
