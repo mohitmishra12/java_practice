@@ -1,6 +1,8 @@
 class numSubString {
     public int numSub(String s) {
         int MOD = (int)Math.pow(10, 9) + 7;
+
+
         int total_count = 0;
         int current_count = 0;
 
@@ -14,7 +16,6 @@ class numSubString {
 
             total_count = (total_count + current_count) % MOD;
         }
-
 
         return total_count;
     }
