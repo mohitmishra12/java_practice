@@ -16,7 +16,6 @@ class numSubString {
 
             total_count = (total_count + current_count) % MOD;
         }
-
         return total_count;
     }
 }
