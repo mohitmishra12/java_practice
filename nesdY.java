@@ -8,6 +8,7 @@ class nesdY {
                 operations += Math.min(remainder, 3 - remainder);
             }
         }
+
         return operations;
     }
 }
