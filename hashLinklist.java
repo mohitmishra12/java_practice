@@ -17,7 +17,7 @@ public class hashLinklist {
         for(Object newArrayList:obj){
             System.out.println(newArrayList);
 
-            obj.remove(4);
+            obj.remove(5);
             System.out.println(obj);
 
 
