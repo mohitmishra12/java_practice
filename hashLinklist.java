@@ -20,6 +20,8 @@ public class hashLinklist {
             obj.remove(5);
             System.out.println(obj);
 
+            obj.equals(24);
+
 
         }
     }
