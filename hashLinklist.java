@@ -21,6 +21,7 @@ public class hashLinklist {
             System.out.println(obj);
 
             obj.equals(24);
+            System.out.println(obj);
 
 
         }
