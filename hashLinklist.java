@@ -10,9 +10,9 @@ public class hashLinklist {
         obj.add(24);
         obj.add(34);
         obj.add(76);
-        obj.add(45);
-        obj.add(88);
-        obj.add(34);
+//        obj.add(45);
+//        obj.add(88);
+//        obj.add(34);
 
         for(Object newArrayList:obj){
             System.out.println(newArrayList);
