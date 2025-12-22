@@ -7,6 +7,7 @@ public class flatMapNew {
     public static void main(String[] args) {
         List<List<String>> lists = Arrays.asList(
                 Arrays.asList("a", "b"),
+
                 Arrays.asList("c","d")
         );
 
